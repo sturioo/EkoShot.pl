@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EkoShot - innowacyjne, biodegradowalne powerbanki dla klubów, barów i restauracji. Zwiększ zadowolenie klientów i dbaj o środowisko w Polsce.">
-    <meta name="keywords" content="EkoShot, eko-powerbanki, biodegradowalne, ładowanie bezprzewodowe, ekologia, kluby, bary, restauracje, Polska">
     <title>EkoShot - Innowacyjne eko-powerbanki dla Twojego biznesu | Polska</title>
-
+    <meta name="description" content="EkoShot - innowacyjne, biodegradowalne powerbanki dla klubów, barów i restauracji. Zwiększ zadowolenie klientów i dbaj o środowisko w Polsce.">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
         <nav class="container">
@@ -27,11 +24,11 @@
                 <a href="#faq">FAQ</a>
                 <a href="#kontakt">Kontakt</a>
             </div>
-            <div class="hamburger">
+            <button class="hamburger" aria-label="Menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </nav>
     </header>
 
@@ -58,15 +55,15 @@
                 <div class="about-stats">
                     <div class="stat-item">
                         <p class="stat-number">50+</p>
-                        <p><strong>Partnerów biznesowych</strong></p>
+                        <p>Partnerów biznesowych</p>
                     </div>
                     <div class="stat-item">
                         <p class="stat-number">10000+</p>
-                        <p><strong>Zadowolonych użytkowników</strong></p>
+                        <p>Zadowolonych użytkowników</p>
                     </div>
                     <div class="stat-item">
                         <p class="stat-number">99%</p>
-                        <p><strong>Biodegradowalności</strong></p>
+                        <p>Biodegradowalności</p>
                     </div>
                 </div>
             </div>
@@ -95,12 +92,6 @@
                         <div class="benefit-icon"><i class="fas fa-shield-alt"></i></div>
                         <h3>Bezpieczne</h3>
                         <p>Certyfikowane urządzenia gwarantujące bezpieczeństwo użytkowania</p>
-                    </div>
-
-                    <div class="benefit">
-                        <div class="benefit-icon"><i class="fas fa-mobile-alt"></i></div>
-                        <h3>Uniwersalne</h3>
-                        <p>Kompatybilne z różnymi typami urządzeń mobilnych</p>
                     </div>
                 </div>
             </div>
@@ -173,18 +164,18 @@
                 <div class="eco-impact">
                     <div class="eco-stat">
                         <div class="eco-icon"><i class="fas fa-trash-alt"></i></div>
-                        <p class="eco-number animate-count-up">500</p>
-                        <p class="eco-label">Kg plastiku zaoszczędzone</p>
+                        <p class="eco-number">500</p>
+                        <p>Kg plastiku zaoszczędzone</p>
                     </div>
                     <div class="eco-stat">
                         <div class="eco-icon"><i class="fas fa-battery-three-quarters"></i></div>
-                        <p class="eco-number animate-count-up">1000</p>
-                        <p class="eco-label">Powerbanków zutylizowanych ekologicznie</p>
+                        <p class="eco-number">1000</p>
+                        <p>Powerbanków zutylizowanych ekologicznie</p>
                     </div>
                     <div class="eco-stat">
                         <div class="eco-icon"><i class="fas fa-handshake"></i></div>
-                        <p class="eco-number animate-count-up">50</p>
-                        <p class="eco-label">Partnerów dbających o środowisko</p>
+                        <p class="eco-number">50</p>
+                        <p>Partnerów dbających o środowisko</p>
                     </div>
                 </div>
             </div>
@@ -229,43 +220,32 @@
                     <div class="form-grid">
                         <div class="form-group">
                             <label for="company-name">Nazwa firmy</label>
-                            <input type="text" id="company-name" name="company-name" required placeholder="Nazwa Twojej firmy">
+                            <input type="text" id="company-name" name="company-name" required>
                         </div>
                         <div class="form-group">
                             <label for="nip">NIP</label>
-                            <input type="text" id="nip" name="nip" required placeholder="123-456-78-90">
+                            <input type="text" id="nip" name="nip" required>
                         </div>
                         <div class="form-group">
                             <label for="contact-name">Imię i nazwisko osoby kontaktowej</label>
-                            <input type="text" id="contact-name" name="contact-name" required placeholder="Jan Kowalski">
+                            <input type="text" id="contact-name" name="contact-name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Adres e-mail</label>
-                            <input type="email" id="email" name="email" required placeholder="jan@przykład.pl">
+                            <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Numer telefonu</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="123-456-789">
+                            <input type="tel" id="phone" name="phone" required>
                         </div>
                         <div class="form-group">
                             <label for="company-address">Adres firmy</label>
-                            <input type="text" id="company-address" name="company-address" required placeholder="ul. Przykładowa 1, 00-000 Miasto">
-                        </div>
-                        <div class="form-group">
-                            <label for="business-type">Rodzaj działalności</label>
-                            <select id="business-type" name="business-type" required>
-                                <option value="">Wybierz...</option>
-                                <option value="club">Klub</option>
-                                <option value="bar">Bar</option>
-                                <option value="restaurant">Restauracja</option>
-                                <option value="cafe">Kawiarnia</option>
-                                <option value="other">Inne</option>
-                            </select>
+                            <input type="text" id="company-address" name="company-address" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="message">Wiadomość (opcjonalnie opisz swoje potrzeby)</label>
-                        <textarea id="message" name="message" placeholder="Twoja wiadomość..."></textarea>
+                        <label for="message">Wiadomość</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="agree-terms">
@@ -299,16 +279,16 @@
                 </div>
                 <div class="footer-section">
                     <h3>Kontakt</h3>
-                    <p>Email: ecoshot.info@gmail.com</p>
+                    <p>Email: kontakt@ekoshot.pl</p>
                     <p>Telefon: +48 792 828 884</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
-            <p class="copyright">&copy; 2024 EkoShot. Wszystkie prawa zastrzeżone.</p>
+            <p class="copyright">&copy; 2023 EkoShot. Wszystkie prawa zastrzeżone.</p>
         </div>
     </footer>
 
@@ -334,5 +314,6 @@
     </div>
 
     <script src="script.js"></script>
+</body>
+</html>
 
-</body></html>
